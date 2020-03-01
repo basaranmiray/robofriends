@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './container/App'
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//birden fazla import edilebilecek durumda {robots} yazılır
+
+//Sil dosyaları için tachyons kullanmıştık card a gittik
+
+ReactDOM.render(
+                <App/>
+, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
